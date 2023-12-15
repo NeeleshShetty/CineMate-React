@@ -7,7 +7,7 @@ import {MovieDetail,MovieList,PageNotFound,Search} from "../pages"
 
 const AllRoutes = () => {
   return (
-		<>
+		<main className="dark:bg-slate-80">
 			<Routes>
 				<Route
 					path=""
@@ -38,7 +38,7 @@ const AllRoutes = () => {
 					element={<PageNotFound />}
 				/>
 			</Routes>
-		</>
+		</main>
 	);
 }
 
