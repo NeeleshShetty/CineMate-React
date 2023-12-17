@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
 import { MovieCard } from "../components/MovieCard"
 import { useFetch } from "../hooks/useFetch";
-export const MovieList = ({apiPath}) => {
+export const MovieList = ({apiPath,title}) => {
   const {data:movies} = useFetch(apiPath)
   
+  useEffect(()=>{
+    document.title=`${title}/ Cinemate` 
+  })
 
   return (
     <main className="py-7 ">

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Pagenotfound from "../assets/images/pagenotfound.png"
 import { Link } from 'react-router-dom'
 export const PageNotFound = () => {
+  useEffect(()=>{
+    document.title="Page Not Found / Cinemate"
+  })
   return (
     <main>
       <section className='flex flex-col justify-center px-2'>

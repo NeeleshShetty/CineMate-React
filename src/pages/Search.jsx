@@ -1,11 +1,19 @@
 import { useFetch } from "../hooks/useFetch";
 import { MovieCard } from "../components/MovieCard"
 import { useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
+
 
 export const Search = ({apiPath}) => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get("q");
   const {data:movies} = useFetch(apiPath,query)
+
+
+  useEffect(()=>{
+    document.title=`${query}/ Cinemate` 
+  })
+
 
   return (
     <main>

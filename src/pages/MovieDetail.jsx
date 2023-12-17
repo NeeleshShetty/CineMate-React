@@ -24,6 +24,11 @@ export const MovieDetail = () => {
 },[]);
 
 
+useEffect(()=>{
+    document.title=`${movie.title}/ Cinemate` 
+  })
+
+
   
   return (
 		<>
