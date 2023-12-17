@@ -36,10 +36,10 @@ const activeClass = "text-base block py-2 px-3 text-white bg-blue-700 rounded md
       
 
 <nav className="bg-white border-b-2 border-gray-200 dark:bg-gray-900 dark:border-b-2">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-3 p-4">
   <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src={Logo} className="h-8" alt="Flowbite Logo" />
-      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Cine</span>
+      <img src={Logo} className="h-8" alt="Cinemate Logo" />
+      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CineMate</span>
   </Link>
   <div id="mobile-nav" className="flex md:order-2">
   <button onClick={() => setDarkMode(!darkMode)} data-tooltip-target="navbar-search-example-toggle-dark-mode-tooltip" type="button" data-toggle-dark="light" className="flex items-center p-2 mr-2 text-xs font-medium text-gray-700 bg-white rounded-lg border border-gray-200 toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">

@@ -7,7 +7,7 @@ import {MovieDetail,MovieList,PageNotFound,Search} from "../pages"
 
 const AllRoutes = () => {
   return (
-		<main className="dark:bg-slate-80">
+		<main className="dark:bg-slate-800">
 			<Routes>
 				<Route
 					path=""
